@@ -23,7 +23,7 @@
 <body>
 
 <!-- navbar start -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "home">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark mynav" id = "home">
     <div class="spinner-border text-primary" role="status">
       <span class="sr-only">Loading...</span>
     </div>
@@ -42,25 +42,29 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home" id="colorchoice">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#about" id="colorchoice">About</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#achievements" id="colorchoice">Achievements</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#community" id="colorchoice">Community</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#skills" id="colorchoice">Skills</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#projects" id="colorchoice">Projects</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+       
     </ul>
     
 
@@ -82,37 +86,15 @@
 <!-- navbar end -->
 
 
-<!-- carousel start -->
-
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-   
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <!-- <img src="images/computer.jpg" class="d-block w-100 mainimg" alt="..."> -->
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="heading"> SIMRAN KAUR</h1>
-        <p class="heading">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-    
-    </div>
-  </div>
-
-</div>
-    
-<!-- carousel end -->
 
 <!-- jumbotron1 start -->
 <div class="jumbotron myjumbo">
   <h1 class="display-4">SIMRAN KAUR</h1>
   <img src = "images/simran.jpg " class="profileimg">
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p class="lead">Welcome to my portfolio. I am a fourth year B.Tech Undergraduate Student at Indira Gandhi Delhi Technical University for Women</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p>I am an enthusiastic learner who loves exploring new things!</p>
+  <a class="btn btn-primary btn-lg" href="assets/resume.pdf" role="button"><i class="fa fa-download"></i>Download Resume</a>
 </div>
 <!-- jumbotron1 end -->
 
@@ -120,11 +102,15 @@
 <div class="myjumbo" id="about">
   <h1>About me</h1>
   <div class="card mb-3 lowecard">
-    <img src="images/computer.jpg" class="card-img-top" alt="...">
+    <img src="images/coverpic.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h5 class="card-title">Learner and Explorer</h5>
+      <p class="card-text">I solve problems. I yearn to create and implement Computer Science solutions. It really interests me how Computer 
+        Science can have such a big impact in our daily lives. I wish to use my software design, analysis and programming skills to create innovavtive, automated
+        systems. I love implement my knowledge in various hackathons. I also like particiating in elecutions and MUNs.
+        I am a hardworking, confident and consistend performer who does not give up on my goals easily.
+      </p>
+      
     </div>
   </div>
 </div>
@@ -132,124 +118,122 @@
 
 
 <!-- jumbotron2 start -->
-<div class="jumbotron myjumbo">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<div class="jumbotron myjumbo" id="achievements" >
+  <h1 class="display-4">Achievements</h1>
+  <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <div class="shadow p-3 mb-5 bg-white rounded achievementbar">Awarded Mrs. Phool Devi scholarship by Hon'ble Education Minister for
+    excellent academic performance in IGDTUW</div>
+  <div class="shadow p-3 mb-5 bg-white rounded achievementbar">CodeChef May Luchtime : Global Rank 476 (2019).</div>
+  <div class="shadow p-3 mb-5 bg-white rounded achievementbar">Winner of Dare To Manage ( Coding Contest ) during Innerve ( Technical
+    Fest, IGDTUW)
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded achievementbar">Winner of Know The Unkown ( Coding Contest) during Innerve ( Technical
+      Fest, IGDTUW)
+      </div>
+  <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+  <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
 </div>
 <!-- jumbotron2 end -->
 
-<div class="myjumbo">
-  <h1>About me</h1>
+<div class="myjumbo" id="community">
+  <h1>Community</h1>
   <div class="card mb-3 lowecard">
     <img src="images/aluminimeet.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h5 class="card-title">I love interacting with people and getting to know more about them</h5>
+      <p class="card-text">Meeting people and building connect is a quality that every individual should have. I believe in rising with community.
+        I	Received Certificate of “Special Appreciation of Efforts” from HelpAge India for creating awareness and assisting in raising funds for the care of elderly. I believe in using my skills to help the community.
+        I had made a chat bot called “Companion Bot” for Dementia patients. Dementia patients often forget their basic information and due to this disease, they lack social interaction in their lives. The badly need a 
+        friend so that they can communicate without any hesitation. The bot is a companion for dementia patients. The patient can ask for his basic information from the bot again and again, talk to the bot about his day, play songs, watch movies by links provided with the bot, etc. So this was a project implemented to help dementia patients.
+      </p>
+      
     </div>
   </div>
 </div>
+
+
 <!-- jumbotron3 start -->
-<div class="jumbotron myjumbo">
+<div class="jumbotron myjumbo" id="skills">
   <h1 class="display-4">Skills</h1>
   <div class="card-deck">
     <div class="card">
-      <img src="images/computer.jpg" class="card-img-top" alt="...">
+      <img src="images/webdev.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">Website Development</h5>
+        <p class="card-text">I know Full Stack Web Development. For frontend, I know HTML, CSS JavaScript , ReactJS. For Backend, I know NodeJS. I have worked with MongoDB and Express </p>
+        
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="images/program.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">Programming</h5>
+        <p class="card-text">I love solving coding questions on various platforms like hackerrank, codechef, etc. I code in C++ and love brainstorming over new questions.</p>
+        
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="images/sketch.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">Sketching</h5>
+        <p class="card-text">I love scketching and painting. I have completed a diploma in Fine Arts from Pracheen Kala Kendra, Chandigarh university.
+          I have won various competitions in Fine Arts.
+        </p>
+        
       </div>
     </div>
   </div>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  
 </div>
 <!-- jumbotron3 end -->
 
-<div class="myjumbo">
+<div class="myjumbo" id="projects">
   <h1>Projects</h1>
   <div class="card-deck">
     <div class="card">
       <img src="images/patatap.png"" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Patatap</h5>
+        <p class="card-text"><span>Technology used: HTML, CSS, JavaScript, Paper.js, Howler.js</span><br>
+          This is a fun web app game that plays amazing animations and sounds on key press.
+          Children can play this when they are bored and enjoy the fun music and colorful
+          circles displayed on the screen.
+          </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted"><a href="https://github.com/simrankaur20/patatap">View Source Code</a></small>
       </div>
     </div>
-    <div class="card">
+    <div class="card projimg">
       <img src="images/snakegame.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">The Snake Game</h5>
+        <p class="card-text">
+          Technology used: HTML, CSS, JavaScript<br>
+          This is a clone of the snake game that we all played in our childhood. The snake moves on the board using arrow keys. When the snake eats food, its length and the score increases. The game gets over when the snake hits the edges of the board.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted"><a href="https://github.com/simrankaur20/The-Snake-Game">View Source Code</a></small>
       </div>
     </div>
-    <div class="card">
+    <div class="card projimg">
       <img src="images/starfall.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title">Starfall</h5>
+        <p class="card-text">Technology used: HTML, CSS, JavaScript, JQuery<br>
+          This is a games website for kids. It has various interesting games made using
+          JavaScript. The aim of this project is to act as a source of entertainment for kids. It
+          includes games like The Drum kit, The Simon Game, The random Dice Game and RGB
+          Color Game.
+          </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted"><a href="https://github.com/simrankaur20/patatap">View Source Code</a></small>
       </div>
     </div>
   </div>
 </div>
-
-<div class="myjumbo">
-  <h1>More about me....</h1>
-  <div class="card mb-3 lowecard">
-    <img src="images/patatap.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card mb-3 lowecard">
-    <img src="images/snakegame.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card mb-3 lowecard">
-    <img src="images/starfall.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
 
 </div>
 
