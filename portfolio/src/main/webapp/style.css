@@ -1,9 +1,47 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+
+.myjumbo{
+  justify-content: center;
+  padding : 3.5%;
+  text-align: center;
+  -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+  
 }
 
-#greeting-container {
-  margin-top: 20px;
+.mainimg{
+  height: 650px;
+}
+
+.profileimg{
+  border-radius: 50%;
+  width: 30%;
+}
+
+
+.heading{
+  color:indigo;
+}
+
+.lowecard{
+  padding: 1%;
+  text-align: center;
+  margin: 2%;
+}
+
+.right{
+  margin: 2%;
+  padding: 4%;
+}
+
+#colorchoice{
+  color: white;
+}
+
+.achievementbar{
+  width : 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  padding: 2%;
 }
