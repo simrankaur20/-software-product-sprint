@@ -8,10 +8,13 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ0gHBhqX8-H4E8tTpcO3sskziT9tjHog"
+  type="text/javascript"></script>
+  <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="initMap();">
 
 	<!-- navbar start -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark mynav" id="home">
@@ -248,10 +251,14 @@
 			</div>
 		</div>
 	</div>
-
+<div class="myjumbo">
+    <h1>Maps</h1>
+    <div id="map"></div>
+</div>
+<div>fshfhi</div>
 
 	<!-- script tags -->
-	<script src="script.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 	</script>
@@ -262,7 +269,7 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 	</script>
 	<script src="https://use.fontawesome.com/785e63fa08.js"></script>
-
+   
 
 
 </body>
